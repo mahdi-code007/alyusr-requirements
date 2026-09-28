@@ -1,0 +1,951 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="وثيقة متطلبات موقع مركز اليسر للتسهيلات العقارية – إعداد مهدي عبدالمجيد">
+<meta property="og:title" content="متطلبات موقع مركز اليسر">
+<meta property="og:description" content="وثيقة متطلبات للمراجعة والاعتماد – إعداد مهدي عبدالمجيد">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>متطلبات موقع مركز اليسر</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Reem+Kufi:wght@500;700&display=swap">
+<style>
+  :root {
+    --ground: #F3F6F5;
+    --surface: #FFFFFF;
+    --surface-2: #EAF0EE;
+    --ink: #1B2A26;
+    --muted: #5A6A65;
+    --line: #D9E2DF;
+    --accent: #0E6A58;
+    --accent-soft: #DCEDE8;
+    --gold: #9A6B17;
+    --gold-soft: #F6EBD3;
+    --red: #C0362C;
+    --red-soft: #F9E1DE;
+    --shadow: 0 1px 2px rgba(20, 45, 38, .05), 0 6px 20px rgba(20, 45, 38, .06);
+    --font-body: "IBM Plex Sans Arabic", "Segoe UI", Tahoma, "Geeza Pro", sans-serif;
+    --font-display: "Reem Kufi", "IBM Plex Sans Arabic", "Segoe UI", Tahoma, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      color-scheme: dark;
+      --ground: #101715;
+      --surface: #17201D;
+      --surface-2: #1E2A26;
+      --ink: #E4EDEA;
+      --muted: #9BADA7;
+      --line: #2A3733;
+      --accent: #57C4A8;
+      --accent-soft: #173A32;
+      --gold: #DDB15F;
+      --gold-soft: #3A2F18;
+      --red: #F07A6F;
+      --red-soft: #43211E;
+      --shadow: 0 1px 2px rgba(0,0,0,.3), 0 6px 20px rgba(0,0,0,.25);
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --ground: #101715;
+    --surface: #17201D;
+    --surface-2: #1E2A26;
+    --ink: #E4EDEA;
+    --muted: #9BADA7;
+    --line: #2A3733;
+    --accent: #57C4A8;
+    --accent-soft: #173A32;
+    --gold: #DDB15F;
+    --gold-soft: #3A2F18;
+    --red: #F07A6F;
+    --red-soft: #43211E;
+    --shadow: 0 1px 2px rgba(0,0,0,.3), 0 6px 20px rgba(0,0,0,.25);
+  }
+
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  body {
+    background: var(--ground);
+    color: var(--ink);
+    font-family: var(--font-body);
+    font-size: 16.5px;
+    line-height: 1.85;
+    direction: rtl;
+    padding-inline: 16px;
+    padding-block: 0 48px;
+  }
+  .wrap { max-width: 780px; margin-inline: auto; }
+
+  /* ---------- Header ---------- */
+  .cover {
+    padding-block: 36px 28px;
+    display: grid;
+    gap: 14px;
+  }
+  .doc-label {
+    display: inline-flex; align-items: center; gap: 8px;
+    font-size: 13px; font-weight: 600; letter-spacing: .02em;
+    color: var(--accent);
+    background: var(--accent-soft);
+    padding: 4px 12px; border-radius: 999px;
+    justify-self: start;
+  }
+  .cover h1 {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: clamp(28px, 7vw, 42px);
+    line-height: 1.35;
+    margin: 0;
+    text-wrap: balance;
+  }
+  .cover .lead {
+    margin: 0;
+    font-size: 17.5px;
+    color: var(--ink);
+    max-width: 62ch;
+  }
+  .meta {
+    display: flex; flex-wrap: wrap; gap: 8px 20px;
+    font-size: 14px; color: var(--muted);
+    border-top: 1px solid var(--line);
+    padding-top: 14px;
+  }
+  .meta b { color: var(--ink); font-weight: 600; }
+
+  .facts {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+    margin-block: 6px 4px;
+  }
+  @media (min-width: 640px) { .facts { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+  .fact {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 12px 14px;
+    display: grid; gap: 2px;
+  }
+  .fact .v { font-family: var(--font-display); font-size: 22px; color: var(--accent); line-height: 1.4; }
+  .fact .k { font-size: 13.5px; color: var(--muted); line-height: 1.6; }
+
+  /* ---------- Sticky section nav ---------- */
+  .toc {
+    position: sticky;
+    top: env(safe-area-inset-top, 0px);
+    z-index: 10;
+    background: var(--ground);
+    margin-inline: -16px;
+    padding: 10px 16px;
+    border-bottom: 1px solid var(--line);
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+  .toc::-webkit-scrollbar { display: none; }
+  .toc ol {
+    list-style: none; margin: 0 auto; padding: 0;
+    display: flex; gap: 6px; white-space: nowrap;
+    max-width: 780px;
+  }
+  .toc a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--muted);
+    font-size: 13.5px; font-weight: 500;
+    padding: 5px 12px;
+    border-radius: 999px;
+    border: 1px solid var(--line);
+    background: var(--surface);
+    transition: background .15s, color .15s, border-color .15s;
+  }
+  .toc a:hover { color: var(--ink); }
+  .toc a.on { background: var(--accent); border-color: var(--accent); color: var(--surface); }
+  a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible {
+    outline: 2px solid var(--accent); outline-offset: 2px;
+  }
+
+  /* ---------- Sections ---------- */
+  main { display: grid; gap: 18px; padding-top: 22px; }
+  section.sec {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    padding: 22px 20px 24px;
+    scroll-margin-top: 64px;
+    display: grid;
+    gap: 14px;
+  }
+  @media (min-width: 640px) { section.sec { padding: 28px 30px 30px; } }
+  .sec-head { display: flex; align-items: baseline; gap: 12px; }
+  .sec-num {
+    font-family: var(--font-display);
+    font-size: 15px;
+    color: var(--accent);
+    background: var(--accent-soft);
+    min-width: 34px; height: 34px;
+    display: inline-grid; place-items: center;
+    border-radius: 10px;
+    flex: none;
+    line-height: 1;
+  }
+  .sec h2 {
+    margin: 0;
+    font-size: clamp(20px, 5vw, 24px);
+    font-weight: 700;
+    line-height: 1.5;
+    text-wrap: balance;
+  }
+  .sec p { margin: 0; max-width: 66ch; }
+  .sec h3 {
+    margin: 6px 0 0;
+    font-size: 16.5px; font-weight: 700;
+    color: var(--ink);
+  }
+  .sec ul, .sec ol.steps { margin: 0; padding-inline-start: 22px; display: grid; gap: 6px; }
+  .sec li::marker { color: var(--accent); }
+  .muted { color: var(--muted); }
+  .note {
+    background: var(--surface-2);
+    border-radius: 12px;
+    padding: 12px 14px;
+    font-size: 15px;
+    color: var(--ink);
+  }
+  .tag {
+    display: inline-block;
+    font-size: 12px; font-weight: 600;
+    padding: 1px 9px; border-radius: 999px;
+    vertical-align: 2px;
+    margin-inline-start: 4px;
+    white-space: nowrap;
+  }
+  .tag.prop { background: var(--gold-soft); color: var(--gold); }
+  .tag.yes { background: var(--accent-soft); color: var(--accent); }
+  .tag.no { background: var(--surface-2); color: var(--muted); }
+  .tag.red { background: var(--red-soft); color: var(--red); }
+  q { quotes: "«" "»"; }
+
+  /* ---------- Roles ---------- */
+  .roles { display: grid; gap: 10px; }
+  @media (min-width: 640px) { .roles { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+  .role {
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 14px 16px;
+    display: grid; gap: 6px; align-content: start;
+  }
+  .role .who { font-weight: 700; font-size: 16px; }
+  .role .sub { font-size: 13px; color: var(--muted); }
+  .role p { font-size: 15px; line-height: 1.8; }
+
+  /* ---------- Tables (stack into cards on phones) ---------- */
+  .tbl { overflow-x: auto; }
+  table.rt { width: 100%; border-collapse: collapse; font-size: 15px; }
+  .rt th {
+    text-align: start; font-weight: 600; font-size: 13.5px; color: var(--muted);
+    padding: 8px 10px; border-bottom: 1px solid var(--line); white-space: nowrap;
+  }
+  .rt td { padding: 10px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  .rt tr:last-child td { border-bottom: 0; }
+  .rt td:first-child { font-weight: 600; }
+  .rt .num { font-variant-numeric: tabular-nums; }
+  @media (max-width: 600px) {
+    .rt thead { display: none; }
+    .rt, .rt tbody, .rt tr, .rt td { display: block; width: 100%; }
+    .rt tr {
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 10px 14px;
+      margin-bottom: 8px;
+      background: var(--surface);
+    }
+    .rt td {
+      border: 0; padding: 4px 0;
+      display: flex; justify-content: space-between; gap: 14px;
+    }
+    .rt td::before {
+      content: attr(data-label);
+      color: var(--muted); font-size: 13.5px; font-weight: 500;
+      flex: none; max-width: 45%;
+    }
+    .rt td > span { text-align: end; }
+    .rt td:first-child {
+      display: block; font-size: 16px;
+      padding-bottom: 6px; margin-bottom: 4px;
+      border-bottom: 1px dashed var(--line);
+    }
+    .rt td:first-child::before { content: none; }
+  }
+
+  /* ---------- Chips ---------- */
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; }
+  .chip {
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: 4px 14px;
+    font-size: 14.5px;
+    background: var(--surface);
+  }
+  .chip.x { color: var(--red); background: var(--red-soft); border-color: transparent; text-decoration: line-through; }
+
+  /* ---------- Listing mock ---------- */
+  .mock {
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 14px;
+    background: var(--surface-2);
+    display: grid; gap: 10px;
+  }
+  .mock-cap { font-size: 13px; color: var(--muted); }
+  .cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+  @media (min-width: 640px) { .cards { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+  .pcard {
+    position: relative; overflow: hidden;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    display: grid;
+  }
+  .pcard .img {
+    aspect-ratio: 16 / 10; max-width: 100%;
+    background:
+      linear-gradient(160deg, color-mix(in srgb, var(--accent) 35%, transparent), transparent 70%),
+      repeating-linear-gradient(90deg, color-mix(in srgb, var(--accent) 12%, transparent) 0 10px, transparent 10px 20px),
+      var(--accent-soft);
+  }
+  .pcard .body { padding: 8px 10px 10px; display: grid; gap: 2px; font-size: 13px; line-height: 1.7; }
+  .pcard .t { font-weight: 700; font-size: 13.5px; }
+  .pcard .p { color: var(--accent); font-weight: 700; font-variant-numeric: tabular-nums; }
+  .pcard .ser { font-size: 11.5px; color: var(--muted); }
+  .pcard.sold { opacity: .72; }
+  .pcard.sold .img { filter: grayscale(1); }
+  .pcard.sold .p { color: var(--muted); text-decoration: line-through; }
+  .ribbon {
+    position: absolute; top: 12px; left: -30px;
+    transform: rotate(-45deg);
+    background: var(--red); color: var(--surface);
+    font-size: 12px; font-weight: 700;
+    width: 120px; text-align: center;
+    padding: 2px 0;
+  }
+  .divider {
+    display: flex; align-items: center; gap: 10px;
+    font-size: 13px; font-weight: 600; color: var(--muted);
+  }
+  .divider::before, .divider::after { content: ""; flex: 1; height: 1px; background: var(--line); }
+
+  .wa {
+    border: 1px solid var(--line);
+    border-radius: 14px 14px 4px 14px;
+    background: var(--accent-soft);
+    padding: 10px 14px;
+    font-size: 15px;
+    justify-self: start;
+    max-width: 100%;
+  }
+  .wa small { display: block; color: var(--muted); font-size: 12px; }
+
+  /* ---------- Request card ---------- */
+  .rcard {
+    border: 1px dashed var(--accent);
+    border-radius: 14px;
+    padding: 12px 16px;
+    display: grid; gap: 8px;
+  }
+  .rcard .t { font-weight: 700; }
+  .rcard .line { display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: 14px; color: var(--muted); }
+  .rcard .btn {
+    justify-self: start;
+    font-size: 14px; font-weight: 600;
+    background: var(--accent); color: var(--surface);
+    border-radius: 999px; padding: 4px 14px;
+  }
+
+  /* ---------- Status flow ---------- */
+  .flow { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+  .st {
+    border-radius: 10px; padding: 6px 14px; font-weight: 600; font-size: 14.5px;
+    border: 1px solid var(--line); background: var(--surface);
+  }
+  .st.pub { background: var(--accent-soft); color: var(--accent); border-color: transparent; }
+  .st.done { background: var(--red-soft); color: var(--red); border-color: transparent; }
+  .arrow { color: var(--muted); font-size: 18px; }
+  .flow-side { font-size: 14px; color: var(--muted); }
+  .flow-side .st { font-size: 13.5px; padding: 3px 10px; }
+
+  /* ---------- Scope ---------- */
+  .scope { display: grid; gap: 12px; }
+  @media (min-width: 640px) { .scope { grid-template-columns: 1fr 1fr; } }
+  .scope > div { border-radius: 14px; padding: 14px 16px; display: grid; gap: 8px; align-content: start; }
+  .scope .in { background: var(--accent-soft); }
+  .scope .out { background: var(--surface-2); }
+  .scope h3 { margin: 0; }
+  .scope ul { font-size: 15px; }
+
+  /* ---------- Review checklist ---------- */
+  .checks { display: grid; gap: 8px; }
+  .check {
+    display: flex; gap: 12px; align-items: flex-start;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 10px 14px;
+    cursor: pointer;
+    font-size: 15.5px;
+    line-height: 1.75;
+    transition: background .15s, border-color .15s;
+  }
+  .check input {
+    appearance: none; -webkit-appearance: none;
+    flex: none;
+    width: 22px; height: 22px; margin: 3px 0 0;
+    border: 2px solid var(--muted);
+    border-radius: 6px;
+    display: grid; place-items: center;
+    cursor: pointer;
+    background: var(--surface);
+  }
+  .check input:checked { background: var(--accent); border-color: var(--accent); }
+  .check input:checked::after {
+    content: ""; width: 6px; height: 11px;
+    border: solid var(--surface); border-width: 0 2.5px 2.5px 0;
+    transform: rotate(45deg) translate(-1px, -1px);
+  }
+  .check:has(input:checked) { background: var(--accent-soft); border-color: transparent; }
+  label.fld { font-weight: 600; font-size: 15px; }
+  textarea {
+    width: 100%;
+    min-height: 110px;
+    font: inherit; font-size: 15.5px;
+    color: var(--ink);
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 10px 12px;
+    resize: vertical;
+  }
+  .actions { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+  button.primary {
+    font: inherit; font-weight: 600; font-size: 15.5px;
+    background: var(--accent); color: var(--surface);
+    border: 0; border-radius: 12px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  button.primary:hover { filter: brightness(1.07); }
+  .copied { font-size: 14px; color: var(--accent); font-weight: 600; }
+  #reply-out { min-height: 180px; font-size: 14px; }
+
+  footer.sign {
+    margin-top: 26px;
+    border-top: 1px solid var(--line);
+    padding-top: 18px;
+    display: grid; gap: 4px;
+    font-size: 14px; color: var(--muted);
+  }
+  footer.sign .name { font-family: var(--font-display); font-size: 20px; color: var(--ink); }
+</style>
+
+</head>
+<body>
+<div class="wrap">
+  <header class="cover">
+    <span class="doc-label">وثيقة متطلبات · للمراجعة والاعتماد</span>
+    <h1>موقع مركز اليسر للتسهيلات العقارية</h1>
+    <p class="lead">موقع لعرض العقارات وطلبها في ٥ تصنيفات، والمكتب هو الوسيط بين البائع والمشتري. برجاء مراجعة كل قسم، وفي آخر الصفحة علّم على البنود اللي حضرتك موافق عليها وابعت لي ردك.</p>
+    <div class="facts" aria-label="ملخص سريع">
+      <div class="fact"><span class="v">٥</span><span class="k">تصنيفات عقارات</span></div>
+      <div class="fact"><span class="v">٤</span><span class="k">مناطق رئيسية</span></div>
+      <div class="fact"><span class="v">١٪ + ١٪</span><span class="k">عمولة البيع من الطرفين</span></div>
+      <div class="fact"><span class="v">½ شهر</span><span class="k">عمولة الإيجار على المستأجر</span></div>
+    </div>
+    <div class="meta">
+      <span>إعداد: <b>مهدي عبدالمجيد</b></span>
+      <span>التاريخ: <b>٢٨ سبتمبر ٢٠٢٦</b></span>
+      <span>الإصدار: <b>١.٠</b></span>
+    </div>
+  </header>
+</div>
+
+<nav class="toc" aria-label="أقسام الوثيقة">
+  <ol>
+    <li><a href="#s1">الفكرة</a></li>
+    <li><a href="#s2">التصنيفات</a></li>
+    <li><a href="#s3">البحث</a></li>
+    <li><a href="#s4">عرض العقارات</a></li>
+    <li><a href="#s5">إضافة عقار</a></li>
+    <li><a href="#s6">الطلبات</a></li>
+    <li><a href="#s7">الرقم المسلسل</a></li>
+    <li><a href="#s8">العمولة</a></li>
+    <li><a href="#s9">الخصوصية</a></li>
+    <li><a href="#s10">لوحة الأدمن</a></li>
+    <li><a href="#s11">النسخة الأولى</a></li>
+    <li><a href="#s12">للتأكيد</a></li>
+  </ol>
+</nav>
+
+<div class="wrap">
+<main>
+
+  <!-- 1 -->
+  <section class="sec" id="s1">
+    <div class="sec-head"><span class="sec-num">١</span><h2>فكرة الموقع والأطراف</h2></div>
+    <p>الموقع بيعرض عقارات للبيع والإيجار، وبيعرض كمان طلبات الناس اللي بتدور على عقار. أي حد يقدر يضيف عقار أو طلب من غير تسجيل حساب، لكن مفيش حاجة تتنشر غير بعد موافقة الأدمن. التواصل كله بيمر على المكتب، والزائر ما بيشوفش أرقام أصحاب العقارات.</p>
+    <div class="roles">
+      <div class="role">
+        <span class="who">الزائر</span><span class="sub">مشتري أو مستأجر</span>
+        <p>يتصفح العقارات ويفلترها، ويشوف التفاصيل، ويضغط «قبول» فيتواصل مع المكتب على واتساب، ويضيف طلب بالعقار اللي بيدور عليه.</p>
+      </div>
+      <div class="role">
+        <span class="who">صاحب العقار</span><span class="sub">المعلن</span>
+        <p>يضيف عقاره للبيع أو الإيجار من غير حساب، ويتصفح الطلبات ويضغط «عندي عقار مناسب».</p>
+      </div>
+      <div class="role">
+        <span class="who">الأدمن</span><span class="sub">صاحب المكتب</span>
+        <p>يراجع وينشر ويعدّل ويحذف أي إعلان أو طلب، ويشوف أرقام التواصل، ويعلّم العقار مباع أو مؤجّر، ويسجّل المعاينات.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2 -->
+  <section class="sec" id="s2">
+    <div class="sec-head"><span class="sec-num">٢</span><h2>التصنيفات والمناطق</h2></div>
+    <p>الموقع فيه ٥ تصنيفات مستقلة. كل تصنيف ليه أيقونة لوحده على الصفحة الرئيسية، ومفيش أي قائمة بتخلط أكتر من تصنيف مع بعض.</p>
+    <div class="tbl">
+      <table class="rt">
+        <thead><tr><th>التصنيف</th><th>بيع</th><th>إيجار</th><th>قيمة الإيجار</th></tr></thead>
+        <tbody>
+          <tr><td>أراضي مباني</td><td data-label="بيع"><span class="tag yes">نعم</span></td><td data-label="إيجار"><span><span class="tag no">لا</span><span class="tag prop">مقترح</span></span></td><td data-label="قيمة الإيجار"><span>—</span></td></tr>
+          <tr><td>أراضي زراعية</td><td data-label="بيع"><span class="tag yes">نعم</span></td><td data-label="إيجار"><span class="tag yes">نعم</span></td><td data-label="قيمة الإيجار"><span>سنوية <span class="tag prop">مقترح</span></span></td></tr>
+          <tr><td>بيوت</td><td data-label="بيع"><span class="tag yes">نعم</span></td><td data-label="إيجار"><span class="tag yes">نعم</span></td><td data-label="قيمة الإيجار"><span>شهرية</span></td></tr>
+          <tr><td>شقق</td><td data-label="بيع"><span class="tag yes">نعم</span></td><td data-label="إيجار"><span class="tag yes">نعم</span></td><td data-label="قيمة الإيجار"><span>شهرية</span></td></tr>
+          <tr><td>محلات</td><td data-label="بيع"><span class="tag yes">نعم</span></td><td data-label="إيجار"><span class="tag yes">نعم</span></td><td data-label="قيمة الإيجار"><span>شهرية</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note">إيجار الأرض الزراعية بيتكتب <b>سنوي</b> لأن ده المتعارف عليه، وأرض المباني <b>بيع بس</b>. النقطتين دول اقتراح مننا ومحتاجين تأكيد حضرتك في القسم ١٢.</p>
+    <h3>المناطق الرئيسية</h3>
+    <div class="chips">
+      <span class="chip">طريق البحر</span>
+      <span class="chip">طريق وسط البلد</span>
+      <span class="chip">الطريق الزراعي</span>
+      <span class="chip">العزب المجاورة</span>
+    </div>
+    <p>المعلن بيختار منطقة من الأربعة، وبعدين يكتب المكان الفرعي بإيده. مثلًا: الطريق الزراعي ← الشتاونة.</p>
+  </section>
+
+  <!-- 3 -->
+  <section class="sec" id="s3">
+    <div class="sec-head"><span class="sec-num">٣</span><h2>البحث والفلاتر</h2></div>
+    <p>الزائر بيختار بالترتيب ده:</p>
+    <ol class="steps">
+      <li><b>التصنيف</b> من الصفحة الرئيسية.</li>
+      <li><b>بيع أو إيجار.</b></li>
+      <li><b>السعر</b> (من ... إلى ...)، والاختيارات بتتغير حسب البيع أو الإيجار.</li>
+      <li><b>المنطقة</b>: واحدة من الأربعة أو الكل.</li>
+    </ol>
+    <div class="tbl">
+      <table class="rt">
+        <thead><tr><th>الفلتر</th><th>يبدأ من</th><th>لحد</th><th>الاختيارات</th></tr></thead>
+        <tbody>
+          <tr><td>سعر البيع <span class="muted">(كل التصنيفات)</span></td><td data-label="يبدأ من" class="num"><span>١٠٠ ألف</span></td><td data-label="لحد" class="num"><span>٥ مليون وأكثر</span></td><td data-label="الاختيارات"><span>١٠٠ ألف، ٢٥٠ ألف، ٥٠٠ ألف، ٧٥٠ ألف، مليون، ١٫٥ مليون، ٢ مليون، ٣ مليون، ٥ مليون، أكثر من ٥ مليون</span></td></tr>
+          <tr><td>الإيجار الشهري <span class="muted">(بيوت، شقق، محلات)</span></td><td data-label="يبدأ من" class="num"><span>٥٠٠ جنيه</span></td><td data-label="لحد" class="num"><span>١٠٬٠٠٠ جنيه وأكثر</span></td><td data-label="الاختيارات"><span>كل ٥٠٠ جنيه: ٥٠٠، ١٬٠٠٠، ١٬٥٠٠ … ١٠٬٠٠٠، أكثر من ١٠٬٠٠٠</span></td></tr>
+          <tr><td>الإيجار السنوي <span class="muted">(أراضي زراعية)</span> <span class="tag prop">مقترح</span></td><td data-label="يبدأ من" class="num"><span>٥ آلاف جنيه</span></td><td data-label="لحد" class="num"><span>١٠٠ ألف جنيه وأكثر</span></td><td data-label="الاختيارات"><span>٥، ١٠، ٢٠، ٣٠، ٥٠، ٧٥، ١٠٠ ألف، أكثر من ١٠٠ ألف</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="muted">التفاصيل الدقيقة زي المساحة وعدد الأدوار والغرف مش موجودة في الفلاتر، ومكانها وصف العقار.</p>
+  </section>
+
+  <!-- 4 -->
+  <section class="sec" id="s4">
+    <div class="sec-head"><span class="sec-num">٤</span><h2>عرض العقارات</h2></div>
+    <h3>الصفحة الرئيسية</h3>
+    <p>اسم «مركز اليسر للتسهيلات العقارية»، وتحته أيقونات الخمس تصنيفات، وأربع أزرار: المعروض، الطلبات، أضف عقار، أضف طلب.</p>
+    <p>الموقع ما يذكرش أي خدمة المكتب ما بيقدمهاش:</p>
+    <div class="chips">
+      <span class="chip x">دون وسيط</span>
+      <span class="chip x">تقسيط</span>
+      <span class="chip x">تشطيبات</span>
+    </div>
+
+    <h3>قائمة العقارات</h3>
+    <ul>
+      <li>المعروض فوق، والأحدث أولًا.</li>
+      <li>بعده خط فاصل، وتحته المباع والمؤجّر، وعلى كل واحد فيهم شريط أحمر في الركن مكتوب عليه «مباع» أو «مؤجّر».</li>
+      <li>المباع والمؤجّر ما بيختفوش تلقائيًا، وبيفضلوا ظاهرين لحد ما الأدمن يحذفهم.</li>
+      <li>الكارت فيه: الصورة، والرقم المسلسل، والعنوان، والمنطقة الرئيسية، والسعر، وعلامة «للبيع» أو «للإيجار».</li>
+    </ul>
+
+    <div class="mock" aria-label="شكل توضيحي لقائمة الشقق">
+      <span class="mock-cap">شكل توضيحي: قائمة الشقق للبيع</span>
+      <div class="cards">
+        <div class="pcard"><div class="img"></div><div class="body"><span class="ser">شقة رقم ١٥</span><span class="t">شقة ٣ غرف – الشتاونة</span><span class="muted">الطريق الزراعي · للبيع</span><span class="p">٦٥٠٬٠٠٠ جنيه</span></div></div>
+        <div class="pcard"><div class="img"></div><div class="body"><span class="ser">شقة رقم ١٢</span><span class="t">شقة دور تاني – السوق</span><span class="muted">وسط البلد · للبيع</span><span class="p">٤٨٠٬٠٠٠ جنيه</span></div></div>
+      </div>
+      <div class="divider">تم بيعها مؤخرًا</div>
+      <div class="cards">
+        <div class="pcard sold"><span class="ribbon">مباع</span><div class="img"></div><div class="body"><span class="ser">شقة رقم ٩</span><span class="t">شقة ٢ غرفة – الكورنيش</span><span class="muted">طريق البحر · للبيع</span><span class="p">٥٢٠٬٠٠٠ جنيه</span></div></div>
+      </div>
+    </div>
+
+    <h3>صفحة العقار</h3>
+    <ul>
+      <li>الرقم المسلسل، مثلًا «شقة رقم ١٥».</li>
+      <li>الصور، وصورة الكروكي بالأبعاد والاتجاهات والبحري والشوارع.</li>
+      <li>السعر، ومعاه «شهريًا» أو «سنويًا» في حالة الإيجار.</li>
+      <li>المنطقة الرئيسية والمكان الفرعي، ووصف العقار.</li>
+      <li>سطر العمولة (القسم ٨).</li>
+      <li>زرار <b>«قبول»</b> بيفتح واتساب المكتب ومعاه رسالة جاهزة فيها رقم العقار:</li>
+    </ul>
+    <div class="wa">السلام عليكم، أنا مهتم بـ شقة رقم ١٥<small>رسالة تلقائية على واتساب المكتب</small></div>
+  </section>
+
+  <!-- 5 -->
+  <section class="sec" id="s5">
+    <div class="sec-head"><span class="sec-num">٥</span><h2>إضافة عقار</h2></div>
+    <p>الإضافة <b>مجانية</b>، ومفيهاش أي دفع أو جدية. الإعلان بيوصل للأدمن الأول، وما بيتنشرش غير بعد موافقته.</p>
+    <div class="tbl">
+      <table class="rt">
+        <thead><tr><th>الحقل</th><th>إجباري؟</th><th>ملاحظات</th></tr></thead>
+        <tbody>
+          <tr><td>التصنيف</td><td data-label="إجباري؟"><span class="tag yes">نعم</span></td><td data-label="ملاحظات"><span>واحد من الخمسة</span></td></tr>
+          <tr><td>بيع / إيجار</td><td data-label="إجباري؟"><span class="tag yes">نعم</span></td><td data-label="ملاحظات"><span>أرض المباني بيع بس</span></td></tr>
+          <tr><td>المنطقة الرئيسية</td><td data-label="إجباري؟"><span class="tag yes">نعم</span></td><td data-label="ملاحظات"><span>واحدة من الأربعة</span></td></tr>
+          <tr><td>المكان بالتحديد</td><td data-label="إجباري؟"><span class="tag yes">نعم</span></td><td data-label="ملاحظات"><span>نص حر، مثلًا «الشتاونة»</span></td></tr>
+          <tr><td>السعر</td><td data-label="إجباري؟"><span class="tag yes">نعم</span></td><td data-label="ملاحظات"><span>جنبه ملحوظة: «يُفضّل إدخال السعر النهائي»</span></td></tr>
+          <tr><td>وصف العقار</td><td data-label="إجباري؟"><span class="tag yes">نعم</span></td><td data-label="ملاحظات"><span>المساحة، الأبعاد، الاتجاهات، عدد الأدوار والغرف</span></td></tr>
+          <tr><td>صورة الكروكي</td><td data-label="إجباري؟"><span class="tag no">لا</span></td><td data-label="ملاحظات"><span>موضح عليها الأبعاد والاتجاهات والبحري والشوارع</span></td></tr>
+          <tr><td>صور حقيقية</td><td data-label="إجباري؟"><span class="tag no">لا (يُفضّل)</span></td><td data-label="ملاحظات"><span>لحد ٦ صور</span></td></tr>
+          <tr><td>لوكيشن على خرائط جوجل</td><td data-label="إجباري؟"><span class="tag no">لا</span></td><td data-label="ملاحظات"><span>يظهر للأدمن بس</span></td></tr>
+          <tr><td>الاسم</td><td data-label="إجباري؟"><span class="tag yes">نعم</span></td><td data-label="ملاحظات"><span>للأدمن بس</span></td></tr>
+          <tr><td>رقم الموبايل</td><td data-label="إجباري؟"><span class="tag yes">نعم</span></td><td data-label="ملاحظات"><span>للأدمن بس، ولازم يكون رقم مصري صحيح</span></td></tr>
+          <tr><td>الموافقة على العمولة</td><td data-label="إجباري؟"><span class="tag yes">نعم</span></td><td data-label="ملاحظات"><span>خانة اختيار (القسم ٨)</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note">بعد الإرسال تظهر رسالة: «تم استلام إعلانك – شقة رقم ١٥. هيتم مراجعته والتواصل معاك».</p>
+  </section>
+
+  <!-- 6 -->
+  <section class="sec" id="s6">
+    <div class="sec-head"><span class="sec-num">٦</span><h2>الطلبات</h2></div>
+    <p>اللي بيدور على عقار وما لقاهوش يقدر يكتب المواصفات والسعر اللي يناسبوه كـ«طلب». الطلبات بتظهر في تبويب «الطلبات» متقسمة بنفس الخمس تصنيفات: طلبات الشقق مع الشقق، وطلبات المحلات مع المحلات، وهكذا.</p>
+    <div class="tbl">
+      <table class="rt">
+        <thead><tr><th>حقل الطلب</th><th>إجباري؟</th><th>يظهر للزوار؟</th></tr></thead>
+        <tbody>
+          <tr><td>التصنيف</td><td data-label="إجباري؟"><span class="tag yes">نعم</span></td><td data-label="يظهر للزوار؟"><span>نعم</span></td></tr>
+          <tr><td>شراء / إيجار</td><td data-label="إجباري؟"><span class="tag yes">نعم</span></td><td data-label="يظهر للزوار؟"><span>نعم</span></td></tr>
+          <tr><td>المنطقة (أو «أي منطقة»)</td><td data-label="إجباري؟"><span class="tag yes">نعم</span></td><td data-label="يظهر للزوار؟"><span>نعم</span></td></tr>
+          <tr><td>الميزانية (أقصى سعر)</td><td data-label="إجباري؟"><span class="tag yes">نعم</span></td><td data-label="يظهر للزوار؟"><span>نعم</span></td></tr>
+          <tr><td>المواصفات المطلوبة</td><td data-label="إجباري؟"><span class="tag yes">نعم</span></td><td data-label="يظهر للزوار؟"><span>نعم</span></td></tr>
+          <tr><td>الاسم ورقم الموبايل</td><td data-label="إجباري؟"><span class="tag yes">نعم</span></td><td data-label="يظهر للزوار؟"><span>لا، للأدمن بس</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="rcard" aria-label="مثال لكارت طلب">
+      <span class="t">طلب شقة رقم ٤</span>
+      <div class="line"><span>مطلوب للإيجار</span><span>وسط البلد</span><span>حتى ٢٬٥٠٠ جنيه شهريًا</span><span>منذ ٣ أيام</span></div>
+      <span class="btn">عندي عقار مناسب</span>
+    </div>
+    <ul>
+      <li>الطلب بيتنشر بعد موافقة الأدمن، زي الإعلانات بالظبط.</li>
+      <li>زرار «عندي عقار مناسب» بيفتح واتساب المكتب ومعاه رقم الطلب.</li>
+      <li>الطلب يفضل ظاهر لحد ما الأدمن يحذفه.</li>
+      <li>لو المكتب لقى لصاحب الطلب عقار وتم البيع أو الإيجار، العمولة نفسها اللي في القسم ٨.</li>
+    </ul>
+  </section>
+
+  <!-- 7 -->
+  <section class="sec" id="s7">
+    <div class="sec-head"><span class="sec-num">٧</span><h2>الرقم المسلسل</h2></div>
+    <p>كل إعلان وكل طلب ليه رقم مسلسل، وكل تصنيف ليه عدّاد مستقل بيبدأ من ١. الرقم بيظهر بصيغة بسيطة يفهمها أي حد.</p>
+    <div class="tbl">
+      <table class="rt">
+        <thead><tr><th>التصنيف</th><th>مثال إعلان</th><th>مثال طلب</th></tr></thead>
+        <tbody>
+          <tr><td>أراضي مباني</td><td data-label="مثال إعلان"><span>أرض مباني رقم ٧</span></td><td data-label="مثال طلب"><span>طلب أرض مباني رقم ٢</span></td></tr>
+          <tr><td>أراضي زراعية</td><td data-label="مثال إعلان"><span>أرض زراعية رقم ٣</span></td><td data-label="مثال طلب"><span>طلب أرض زراعية رقم ١</span></td></tr>
+          <tr><td>بيوت</td><td data-label="مثال إعلان"><span>بيت رقم ١٢</span></td><td data-label="مثال طلب"><span>طلب بيت رقم ٥</span></td></tr>
+          <tr><td>شقق</td><td data-label="مثال إعلان"><span>شقة رقم ١٥</span></td><td data-label="مثال طلب"><span>طلب شقة رقم ٤</span></td></tr>
+          <tr><td>محلات</td><td data-label="مثال إعلان"><span>محل رقم ٣</span></td><td data-label="مثال طلب"><span>طلب محل رقم ٢</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <ul>
+      <li>البيع والإيجار ماشيين على نفس المسلسل جوه التصنيف الواحد.</li>
+      <li>الرقم بيتحدد أول ما الإعلان يتبعت، عشان الأدمن يقدر يكلم صاحبه بيه قبل النشر.</li>
+      <li>الرقم ما يتكررش أبدًا حتى لو الإعلان اتحذف، وعادي يبقى فيه أرقام ناقصة لو إعلان اترفض.</li>
+      <li>الأدمن يقدر يدوّر بالرقم في لوحة التحكم، سواء اتكتب بالأرقام العربي (١٥) أو الإنجليزي (15).</li>
+    </ul>
+  </section>
+
+  <!-- 8 -->
+  <section class="sec" id="s8">
+    <div class="sec-head"><span class="sec-num">٨</span><h2>العمولة وحماية حق المكتب</h2></div>
+    <p>مفيش أي جدية حجز أو جدية اتفاق، ومفيش أي دفع جوه الموقع. المكتب بياخد عمولته بس لما البيع أو الإيجار يتم.</p>
+    <div class="tbl">
+      <table class="rt">
+        <thead><tr><th>التعامل</th><th>على البائع أو المالك</th><th>على المشتري أو المستأجر</th></tr></thead>
+        <tbody>
+          <tr><td>بيع</td><td data-label="على البائع / المالك"><span>١٪ من قيمة البيع</span></td><td data-label="على المشتري / المستأجر"><span>١٪ من قيمة البيع</span></td></tr>
+          <tr><td>إيجار شهري <span class="muted">(بيوت، شقق، محلات)</span></td><td data-label="على البائع / المالك"><span>بدون عمولة</span></td><td data-label="على المشتري / المستأجر"><span>نصف شهر</span></td></tr>
+          <tr><td>إيجار أرض زراعية <span class="muted">(سنوي)</span> <span class="tag prop">مقترح</span></td><td data-label="على البائع / المالك"><span>بدون عمولة</span></td><td data-label="على المشتري / المستأجر"><span>ما يعادل نصف شهر (الإيجار السنوي ÷ ٢٤)</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>إعفاء المالك من عمولة الإيجار بيخلينا نقول «اعرض عقارك للإيجار مجانًا»، وده بيشجع أصحاب العقارات يعلنوا.</p>
+
+    <h3>العمولة بتظهر في مكانين</h3>
+    <ul>
+      <li><b>صفحة العقار (للمشتري):</b> «عمولة المكتب: ١٪ من قيمة البيع (حوالي ٤٬٥٠٠ جنيه)»، وفي الإيجار: «عمولة المكتب: نصف شهر (حوالي ٧٥٠ جنيه)». المبلغ بيتحسب تلقائي من السعر.</li>
+      <li><b>فورم الإضافة (للمعلن):</b> خانة موافقة إجبارية. في البيع: «أوافق على عمولة المكتب ١٪ من قيمة البيع عند إتمامه عن طريق المركز»، وفي الإيجار: «أوافق على أن يتم التأجير عن طريق المركز».</li>
+    </ul>
+
+    <h3>ليه محتاجين حماية للعمولة</h3>
+    <p>من غير جدية، المشتري والبائع ممكن يتفقوا من ورا المكتب بعد المعاينة. عشان كده الموقع هيعمل الآتي:</p>
+    <ol class="steps">
+      <li>يحفظ موافقة المعلن على العمولة بالتاريخ ورقم الموبايل.</li>
+      <li>يخفي رقم صاحب العقار واللوكيشن الدقيق عن الزوار.</li>
+      <li>فيه «سجل معاينات» في لوحة الأدمن (رقم العقار، اسم المشتري ورقمه، تاريخ المعاينة)، وده دليل إن المكتب هو اللي عرّف الطرفين على بعض.</li>
+      <li>اقتراح برا الموقع: ورقة معاينة بسيطة يمضي عليها المشتري قبل المعاينة.</li>
+    </ol>
+  </section>
+
+  <!-- 9 -->
+  <section class="sec" id="s9">
+    <div class="sec-head"><span class="sec-num">٩</span><h2>الخصوصية</h2></div>
+    <p>بيانات التواصل واللوكيشن الدقيق للأدمن بس، والإخفاء ده بيتعمل من السيرفر نفسه، فمافيش زائر يقدر يوصلهم بأي طريقة.</p>
+    <div class="tbl">
+      <table class="rt">
+        <thead><tr><th>البيان</th><th>الزائر</th><th>الأدمن</th></tr></thead>
+        <tbody>
+          <tr><td>الصور والكروكي والوصف والسعر</td><td data-label="الزائر"><span class="tag yes">يشوف</span></td><td data-label="الأدمن"><span class="tag yes">يشوف</span></td></tr>
+          <tr><td>المنطقة الرئيسية والمكان الفرعي</td><td data-label="الزائر"><span class="tag yes">يشوف</span></td><td data-label="الأدمن"><span class="tag yes">يشوف</span></td></tr>
+          <tr><td>اللوكيشن الدقيق على الخريطة</td><td data-label="الزائر"><span class="tag red">لا</span></td><td data-label="الأدمن"><span class="tag yes">يشوف</span></td></tr>
+          <tr><td>اسم ورقم صاحب العقار</td><td data-label="الزائر"><span class="tag red">لا</span></td><td data-label="الأدمن"><span class="tag yes">يشوف</span></td></tr>
+          <tr><td>اسم ورقم صاحب الطلب</td><td data-label="الزائر"><span class="tag red">لا</span></td><td data-label="الأدمن"><span class="tag yes">يشوف</span></td></tr>
+          <tr><td>رقم واتساب المكتب</td><td data-label="الزائر"><span class="tag yes">يشوف</span></td><td data-label="الأدمن"><span class="tag yes">يشوف</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- 10 -->
+  <section class="sec" id="s10">
+    <div class="sec-head"><span class="sec-num">١٠</span><h2>لوحة الأدمن وحالات الإعلان</h2></div>
+    <p>الأدمن هو اللي بيتحكم في كل حاجة، ومفيش إعلان أو طلب بيختفي من نفسه.</p>
+    <div class="flow" aria-label="مسار الإعلان">
+      <span class="st">قيد المراجعة</span><span class="arrow" aria-hidden="true">←</span>
+      <span class="st pub">منشور</span><span class="arrow" aria-hidden="true">←</span>
+      <span class="st done">مباع / مؤجّر</span>
+    </div>
+    <p class="flow-side">ومن أي مرحلة يقدر الأدمن يحوّله إلى <span class="st">مرفوض</span> أو <span class="st">محذوف</span>.</p>
+    <div class="tbl">
+      <table class="rt">
+        <thead><tr><th>الحالة</th><th>معناها</th><th>تظهر للزوار؟</th></tr></thead>
+        <tbody>
+          <tr><td>قيد المراجعة</td><td data-label="معناها"><span>اتبعت ومستني موافقة الأدمن</span></td><td data-label="تظهر للزوار؟"><span>لا</span></td></tr>
+          <tr><td>منشور</td><td data-label="معناها"><span>الأدمن وافق عليه</span></td><td data-label="تظهر للزوار؟"><span>نعم، في المعروض</span></td></tr>
+          <tr><td>مباع / مؤجّر</td><td data-label="معناها"><span>الأدمن علّمه بعد إتمام التعامل</span></td><td data-label="تظهر للزوار؟"><span>نعم، تحت الخط الفاصل</span></td></tr>
+          <tr><td>مرفوض</td><td data-label="معناها"><span>الأدمن رفضه</span></td><td data-label="تظهر للزوار؟"><span>لا</span></td></tr>
+          <tr><td>محذوف</td><td data-label="معناها"><span>الأدمن حذفه</span></td><td data-label="تظهر للزوار؟"><span>لا، ويفضل في أرشيف الأدمن</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <h3>الأدمن يقدر</h3>
+    <ul>
+      <li>يشوف الإعلانات والطلبات الجديدة وينشرها أو يرفضها.</li>
+      <li>يعدّل أي إعلان أو طلب.</li>
+      <li>يعلّم العقار «مباع» أو «مؤجّر»، أو يرجّعه للمعروض لو التعامل اتلغى.</li>
+      <li>يحذف أي إعلان أو طلب. الحذف بيشيله من الموقع ويحطه في الأرشيف، عشان لو حد سأل عنه بعدين بياناته تفضل موجودة. ومن الأرشيف يقدر يحذف نهائي.</li>
+      <li>يدوّر بالرقم المسلسل.</li>
+      <li>يشوف رقم صاحب العقار أو الطلب، ويتصل بيه أو يكلمه واتساب بضغطة واحدة.</li>
+      <li>يسجّل المعاينات (المشتري، والعقار، والتاريخ).</li>
+      <li>يغيّر رقم واتساب المكتب من الإعدادات.</li>
+    </ul>
+  </section>
+
+  <!-- 11 -->
+  <section class="sec" id="s11">
+    <div class="sec-head"><span class="sec-num">١١</span><h2>المنصة وحدود النسخة الأولى</h2></div>
+    <p>المشروع <b>موقع ويب</b> بيفتح بلينك من أي موبايل أو كمبيوتر، ويدعم <b>PWA</b>: يعني الزائر يقدر يثبّته على شاشة الموبايل زي التطبيق من غير ما ينزّله من متجر. الواجهة عربي بالكامل، ومصممة للموبايل الأول.</p>
+    <div class="scope">
+      <div class="in">
+        <h3>ضمن النسخة الأولى</h3>
+        <ul>
+          <li>الخمس تصنيفات والفلاتر</li>
+          <li>إضافة عقار وإضافة طلب بمراجعة الأدمن</li>
+          <li>الرقم المسلسل لكل تصنيف</li>
+          <li>زرار «قبول» وزرار «عندي عقار مناسب» على واتساب</li>
+          <li>إخفاء أرقام أصحاب العقارات والطلبات</li>
+          <li>لوحة الأدمن وسجل المعاينات</li>
+          <li>حساب العمولة التقريبية في صفحة العقار</li>
+          <li>تثبيت الموقع كتطبيق (PWA)</li>
+        </ul>
+      </div>
+      <div class="out">
+        <h3>مش ضمن النسخة الأولى (ممكن بعدين)</h3>
+        <ul>
+          <li>تطبيق على جوجل بلاي أو آب ستور</li>
+          <li>أي دفع إلكتروني</li>
+          <li>حسابات للمعلنين يتابعوا منها إعلاناتهم</li>
+          <li>إن الموقع يقترح للأدمن الطلبات المطابقة لكل عقار تلقائي</li>
+          <li>إشعارات للأدمن مع كل إعلان جديد</li>
+          <li>حساب العمولات وتقارير شهرية</li>
+          <li>المفضلة ومقارنة العقارات</li>
+          <li>واجهة بالإنجليزي</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 12 -->
+  <section class="sec" id="s12">
+    <div class="sec-head"><span class="sec-num">١٢</span><h2>نقاط محتاجة تأكيد حضرتك</h2></div>
+    <p>دي اقتراحات مننا في نقاط ما اتحددتش قبل كده. علّم على اللي حضرتك موافق عليه، واكتب ملاحظاتك تحت، وبعدين اضغط «انسخ ردّي» وابعته لي على واتساب.</p>
+    <div class="checks" id="confirm-list">
+      <label class="check"><input type="checkbox" id="c1" data-group="confirm"><span>أرض المباني بيع بس، من غير إيجار.</span></label>
+      <label class="check"><input type="checkbox" id="c2" data-group="confirm"><span>إيجار الأرض الزراعية سنوي، وفلتره من ٥ آلاف لحد ١٠٠ ألف جنيه.</span></label>
+      <label class="check"><input type="checkbox" id="c3" data-group="confirm"><span>عمولة إيجار الأرض الزراعية بتساوي نص شهر (الإيجار السنوي ÷ ٢٤) على المستأجر.</span></label>
+      <label class="check"><input type="checkbox" id="c4" data-group="confirm"><span>المالك معفي من عمولة الإيجار.</span></label>
+      <label class="check"><input type="checkbox" id="c5" data-group="confirm"><span>الطلبات بتتنشر بعد مراجعة الأدمن، زي الإعلانات.</span></label>
+      <label class="check"><input type="checkbox" id="c6" data-group="confirm"><span>خانة الموافقة على العمولة في فورم الإضافة، وسجل المعاينات في لوحة الأدمن.</span></label>
+      <label class="check"><input type="checkbox" id="c7" data-group="confirm"><span>الحذف بيحط الإعلان في أرشيف، والحذف النهائي من جوه الأرشيف.</span></label>
+    </div>
+
+    <h3>محتاجين من حضرتك قبل ما نبدأ التنفيذ</h3>
+    <div class="checks" id="needs-list">
+      <label class="check"><input type="checkbox" id="n1" data-group="needs"><span>اللوجو (أو نصمم واحد بسيط).</span></label>
+      <label class="check"><input type="checkbox" id="n2" data-group="needs"><span>رقم واتساب المكتب اللي هتوصله رسائل «قبول».</span></label>
+      <label class="check"><input type="checkbox" id="n3" data-group="needs"><span>عنوان المكتب ورقم التليفون، عشان يتحطوا في آخر الصفحة.</span></label>
+      <label class="check"><input type="checkbox" id="n4" data-group="needs"><span>اسم الدومين اللي تفضله للموقع.</span></label>
+      <label class="check"><input type="checkbox" id="n5" data-group="needs"><span>من ٥ لـ ١٠ عقارات حقيقية بصورها، عشان الموقع يبدأ وهو مش فاضي.</span></label>
+    </div>
+    <p class="muted">علّم على اللي جهّزته من القائمة دي.</p>
+
+    <label class="fld" for="notes">ملاحظات حضرتك</label>
+    <textarea id="notes" placeholder="اكتب هنا أي تعديل على أي قسم، مثلًا: القسم ٣ – عايز فلتر البيع يبدأ من ٥٠ ألف"></textarea>
+
+    <div class="actions">
+      <button type="button" class="primary" id="copy-btn">انسخ ردّي</button>
+      <span class="copied" id="copy-msg" role="status" hidden>تم نسخ الرد، الصقه في واتساب</span>
+    </div>
+    <textarea id="reply-out" readonly hidden aria-label="نص الرد"></textarea>
+  </section>
+
+</main>
+
+<footer class="sign">
+  <span>إعداد</span>
+  <span class="name">مهدي عبدالمجيد</span>
+  <span>وثيقة متطلبات موقع مركز اليسر للتسهيلات العقارية · الإصدار ١.٠ · ٢٨ سبتمبر ٢٠٢٦</span>
+  <span>أي تعديل نتفق عليه هيتضاف في إصدار جديد من الوثيقة.</span>
+</footer>
+</div>
+
+<script>
+(function () {
+  var KEY = 'alyusr-review-v1';
+  var boxes = Array.prototype.slice.call(document.querySelectorAll('.check input'));
+  var notes = document.getElementById('notes');
+
+  // Restore per-viewer progress
+  try {
+    var saved = JSON.parse(localStorage.getItem(KEY) || '{}');
+    boxes.forEach(function (b) { if (saved[b.id]) b.checked = true; });
+    if (saved.notes) notes.value = saved.notes;
+  } catch (e) {}
+
+  function save() {
+    try {
+      var s = { notes: notes.value };
+      boxes.forEach(function (b) { s[b.id] = b.checked; });
+      localStorage.setItem(KEY, JSON.stringify(s));
+    } catch (e) {}
+  }
+  boxes.forEach(function (b) { b.addEventListener('change', save); });
+  notes.addEventListener('input', save);
+
+  function textOf(b) { return b.parentNode.querySelector('span').textContent.trim(); }
+
+  function buildReply() {
+    var confirm = boxes.filter(function (b) { return b.dataset.group === 'confirm'; });
+    var needs = boxes.filter(function (b) { return b.dataset.group === 'needs'; });
+    var ok = confirm.filter(function (b) { return b.checked; });
+    var notOk = confirm.filter(function (b) { return !b.checked; });
+    var ready = needs.filter(function (b) { return b.checked; });
+    var pending = needs.filter(function (b) { return !b.checked; });
+    var lines = ['ردّي على وثيقة متطلبات موقع مركز اليسر (الإصدار ١.٠)', ''];
+    lines.push('موافق على:');
+    lines.push(ok.length ? ok.map(function (b) { return '✔ ' + textOf(b); }).join('\n') : '— لا شيء بعد');
+    lines.push('');
+    lines.push('محتاج نتكلم فيه:');
+    lines.push(notOk.length ? notOk.map(function (b) { return '• ' + textOf(b); }).join('\n') : '— لا شيء');
+    lines.push('');
+    lines.push('جاهز عندي:');
+    lines.push(ready.length ? ready.map(function (b) { return '✔ ' + textOf(b); }).join('\n') : '— لا شيء بعد');
+    if (pending.length) {
+      lines.push('');
+      lines.push('لسه هجهّز:');
+      lines.push(pending.map(function (b) { return '• ' + textOf(b); }).join('\n'));
+    }
+    var n = notes.value.trim();
+    if (n) { lines.push(''); lines.push('ملاحظات:'); lines.push(n); }
+    return lines.join('\n');
+  }
+
+  var btn = document.getElementById('copy-btn');
+  var msg = document.getElementById('copy-msg');
+  var out = document.getElementById('reply-out');
+  btn.addEventListener('click', function () {
+    var text = buildReply();
+    function fallback() {
+      out.hidden = false;
+      out.value = text;
+      out.focus();
+      out.select();
+      msg.textContent = 'انسخ النص اللي تحت وابعته على واتساب';
+      msg.hidden = false;
+    }
+    try {
+      navigator.clipboard.writeText(text).then(function () {
+        out.hidden = true;
+        msg.textContent = 'تم نسخ الرد، الصقه في واتساب';
+        msg.hidden = false;
+      }, fallback);
+    } catch (e) { fallback(); }
+  });
+
+  // Highlight the current section in the sticky nav
+  var links = Array.prototype.slice.call(document.querySelectorAll('.toc a'));
+  var map = {};
+  links.forEach(function (a) { map[a.getAttribute('href').slice(1)] = a; });
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (en.isIntersecting) {
+          links.forEach(function (a) { a.classList.remove('on'); });
+          var a = map[en.target.id];
+          if (a) {
+            a.classList.add('on');
+            var nav = a.closest('.toc');
+            if (nav) {
+              var r = a.getBoundingClientRect(), nr = nav.getBoundingClientRect();
+              if (r.left < nr.left || r.right > nr.right) {
+                nav.scrollBy({ left: (r.left + r.width / 2) - (nr.left + nr.width / 2), behavior: 'smooth' });
+              }
+            }
+          }
+        }
+      });
+    }, { rootMargin: '-30% 0px -60% 0px' });
+    document.querySelectorAll('section.sec').forEach(function (s) { io.observe(s); });
+  }
+})();
+</script>
+</body>
+</html>
