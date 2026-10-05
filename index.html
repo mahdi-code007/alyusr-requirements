@@ -3,9 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="description" content="وثيقة متطلبات موقع اليسر للتسهيلات العقارية – الإصدار ١.١ – إعداد مهدي عبدالمجيد">
-<meta property="og:title" content="متطلبات موقع اليسر – الإصدار ١.١">
-<meta property="og:description" content="القرارات الجديدة و٦ أسئلة محتاجة رد – إعداد مهدي عبدالمجيد">
+<meta name="description" content="وثيقة متطلبات موقع اليسر للتسهيلات العقارية – الإصدار ١.٢ – إعداد مهدي عبدالمجيد">
+<meta property="og:title" content="متطلبات موقع اليسر – الإصدار ١.٢">
+<meta property="og:description" content="القرارات الجديدة وشرح الدومين وأسعاره، و٦ أسئلة محتاجة رد – إعداد مهدي عبدالمجيد">
 <title>متطلبات موقع اليسر</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -131,6 +131,23 @@
   .whatsnew li::marker { color: var(--new); }
   .whatsnew a { color: var(--new); font-weight: 600; text-decoration: none; white-space: nowrap; }
   .whatsnew a:hover { text-decoration: underline; }
+  .whatsnew.v12 { background: var(--accent-soft); border-color: var(--accent); }
+  .whatsnew.v12 h2, .whatsnew.v12 a { color: var(--accent); }
+  .whatsnew.v12 li::marker { color: var(--accent); }
+  .pill.v12 { background: var(--accent); color: var(--surface); }
+  .nb.v12 { background: var(--accent-soft); border-color: var(--accent); }
+  .dom-ex {
+    direction: ltr; justify-self: start; max-width: 100%;
+    display: flex; align-items: center; gap: 10px;
+    background: var(--surface); border: 1px solid var(--line); border-radius: 999px;
+    padding: 8px 18px; font-size: 18px; font-weight: 600; box-shadow: 0 1px 3px rgba(0,0,0,.06);
+  }
+  .dom-ex::before { content: ""; width: 12px; height: 12px; border-radius: 50%; border: 2px solid var(--accent); flex: none; }
+  .q-done {
+    display: flex; flex-wrap: wrap; gap: 6px 12px; align-items: center;
+    border: 1px solid var(--accent); background: var(--accent-soft);
+    border-radius: 14px; padding: 12px 14px; font-size: 15.5px;
+  }
   .ask-cta {
     display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px;
     background: var(--gold-soft); border: 1px solid var(--gold-line);
@@ -422,9 +439,9 @@
 
 <div class="wrap">
   <header class="cover">
-    <span class="doc-label">وثيقة متطلبات · الإصدار ١.١</span>
+    <span class="doc-label">وثيقة متطلبات · الإصدار ١.٢</span>
     <h1>موقع اليسر للتسهيلات العقارية</h1>
-    <p class="lead">الإصدار ده فيه كل القرارات اللي حضرتك بعتها بعد الإصدار ١.٠. أي حاجة اتغيرت متعلّم عليها <span class="hl">باللون الأزرق</span>، والأسئلة اللي محتاجة رد حضرتك <b style="color:var(--gold)">باللون الذهبي</b> وتلاقيها مجمعة في آخر الصفحة.</p>
+    <p class="lead">الإصدار ده فيه ردّ حضرتك على سعر بيع الأراضي، وشرح بسيط لعنوان الموقع (الدومين) وأسعاره. الجديد في الإصدار ده <b style="color:var(--accent)">باللون الأخضر</b>، وتغييرات الإصدار ١.١ <span class="hl">باللون الأزرق</span>، والأسئلة اللي محتاجة رد حضرتك <b style="color:var(--gold)">باللون الذهبي</b> وتلاقيها مجمعة في آخر الصفحة.</p>
     <div class="facts" aria-label="ملخص سريع">
       <div class="fact"><span class="v">٤</span><span class="k">تصنيفات رئيسية</span></div>
       <div class="fact"><span class="v">٤</span><span class="k">مناطق رئيسية</span></div>
@@ -433,18 +450,33 @@
     </div>
     <div class="meta">
       <span>إعداد: <b>مهدي عبدالمجيد</b></span>
-      <span>التاريخ: <b>٢٩ سبتمبر ٢٠٢٦</b></span>
-      <span>الإصدار: <b>١.١</b> <span class="muted">(السابق ١.٠ – ٢٨ سبتمبر)</span></span>
+      <span>التاريخ: <b>٥ أكتوبر ٢٠٢٦</b></span>
+      <span>الإصدار: <b>١.٢</b> <span class="muted">(السابق ١.١ – ٢٩ سبتمبر)</span></span>
     </div>
     <div class="legend" aria-label="دليل الألوان">
-      <span><span class="pill new">جديد ١.١</span> قرار جديد أو تعديل</span>
+      <span><span class="pill v12">جديد ١.٢</span> الجديد في الإصدار ده</span>
+      <span><span class="pill new">جديد ١.١</span> اتغير في الإصدار اللي فات</span>
       <span><span class="pill ask">سؤال</span> محتاج رد حضرتك</span>
       <span><span class="pill ok">✓ ١.٠</span> اتوافق عليه قبل كده</span>
     </div>
   </header>
 
-  <aside class="whatsnew" id="new" aria-label="الجديد في الإصدار ١.١">
-    <h2>الجديد في الإصدار ١.١</h2>
+  <aside class="whatsnew v12" id="new12" aria-label="الجديد في الإصدار ١.٢">
+    <h2>الجديد في الإصدار ١.٢</h2>
+    <ul>
+      <li><b>سعر بيع الأراضي اتحسم:</b> بيتكتب <b>إجمالي القطعة</b> زي ما حضرتك قلت. <a href="#s3">القسم ٣</a></li>
+      <li><b>قسم جديد عن عنوان الموقع (الدومين):</b> يعني إيه، وليه نحجزه، وتكلفته السنوية، والأسماء المتاحة وأسعارها. <a href="#s12">القسم ١٢</a></li>
+      <li>سؤال الدومين اتحدّث، لأن <b>AlYusr.com محجوز</b>، وفيه بدائل متاحة. <a href="#q5">سؤال ٥</a></li>
+      <li>دورنا على <b>التطبيقين الأقرب لفكرة حضرتك</b>، ومحتاجين تأكيد. <a href="#q7">سؤال ٧</a></li>
+    </ul>
+    <div class="ask-cta">
+      <span>فاضل ٦ أسئلة محتاجة رد حضرتك عشان نقفل التفاصيل</span>
+      <a href="#s13">روح للأسئلة</a>
+    </div>
+  </aside>
+
+  <aside class="whatsnew" id="new" aria-label="اللي اتغير في الإصدار ١.١" style="margin-top:14px">
+    <h2>اللي اتغير في الإصدار ١.١</h2>
     <ul>
       <li>الاسم بقى <b>«اليسر للتسهيلات العقارية»</b> من غير كلمة «مركز». <a href="#s1">القسم ١</a></li>
       <li><b>٤ تصنيفات رئيسية</b>، وتحت كل واحد تصنيفين فرعيين، وكل فرع ليه قائمة مستقلة. <a href="#s2">القسم ٢</a></li>
@@ -460,16 +492,13 @@
       <li><b>مسلسل مستقل لكل قائمة</b>، والبيع لوحده والإيجار لوحده والمعروض لوحده والمطلوب لوحده. <a href="#s7">القسم ٧</a></li>
       <li>عمولة الإيجار: <b>نص شهر على المستأجر ونص شهر على المؤجر</b>. <a href="#s8">القسم ٨</a></li>
     </ul>
-    <div class="ask-cta">
-      <span>فيه ٦ أسئلة محتاجة رد حضرتك عشان نقفل الإصدار ده</span>
-      <a href="#s12">روح للأسئلة</a>
-    </div>
   </aside>
 </div>
 
 <nav class="toc" aria-label="أقسام الوثيقة">
   <ol>
-    <li><a href="#new" class="chg">الجديد</a></li>
+    <li><a href="#new12" class="chg">الجديد ١.٢</a></li>
+    <li><a href="#new" class="chg">تغييرات ١.١</a></li>
     <li><a href="#s1" class="chg">الفكرة</a></li>
     <li><a href="#s2" class="chg">التصنيفات</a></li>
     <li><a href="#s3" class="chg">البحث</a></li>
@@ -481,7 +510,8 @@
     <li><a href="#s9">الخصوصية</a></li>
     <li><a href="#s10" class="chg">لوحة الأدمن</a></li>
     <li><a href="#s11" class="chg">النسخة الأولى</a></li>
-    <li><a href="#s12" class="askl">الأسئلة (٦)</a></li>
+    <li><a href="#s12" class="chg">الدومين</a></li>
+    <li><a href="#s13" class="askl">الأسئلة (٦)</a></li>
   </ol>
 </nav>
 
@@ -607,9 +637,9 @@
       <a class="pill ask" href="#q3">سؤال ٣</a>
       <p>لما الزائر يختار مثلًا ٢٥٠ ألف، فهمنا إن الموقع يعرض له العقارات <b>اللي سعرها لحد ٢٥٠ ألف</b>. صح كده؟</p>
     </div>
-    <div class="qb">
-      <a class="pill ask" href="#q2">سؤال ٢</a>
-      <p>سعر <b>بيع</b> الأراضي يتكتب إجمالي القطعة، ولا سعر القيراط للزراعي وسعر المتر للمباني؟ الإجابة دي هتحدد اختيارات فلتر البيع في الأراضي.</p>
+    <div class="nb v12">
+      <span class="pill v12">اتحسم في ١.٢</span>
+      <p>سعر <b>بيع</b> الأراضي (مباني وزراعي) بيتكتب <b>إجمالي القطعة</b>، ونفس فلتر سعر البيع بيشتغل عليه.</p>
     </div>
 
     <div class="nb">
@@ -901,10 +931,7 @@
   <section class="sec changed" id="s11">
     <div class="sec-head"><span class="sec-num">١١</span><h2>المنصة وحدود النسخة الأولى</h2><span class="pill new">جديد ١.١</span></div>
     <p>المشروع <b>موقع ويب</b> بيفتح بلينك من أي موبايل أو كمبيوتر، ويدعم <b>PWA</b>: يعني الزائر يقدر يثبّته على شاشة الموبايل زي التطبيق من غير ما ينزّله من متجر. الواجهة عربي بالكامل، ومصممة للموبايل الأول.</p>
-    <div class="qb">
-      <a class="pill ask" href="#q5">سؤال ٥ – الدومين</a>
-      <p>اسم <b>AlYusr.com</b> طلع <b>محجوز من سنة ٢٠٠٣</b>، فمش متاح. وقت الكشف كان فيه بدائل متاحة زي <b>alyusr.net</b> و <b>alyusr-eg.com</b>، والتأكيد النهائي بيبقى وقت الحجز.</p>
-    </div>
+    <p class="note">عنوان الموقع (الدومين) وتكلفته متشرحين بالتفصيل في <a href="#s12">القسم ١٢</a>.</p>
     <div class="scope">
       <div class="in">
         <h3>ضمن النسخة الأولى</h3>
@@ -940,8 +967,60 @@
   </section>
 
   <!-- 12 -->
-  <section class="sec asks" id="s12">
-    <div class="sec-head"><span class="sec-num">١٢</span><h2>أسئلة محتاجة رد حضرتك</h2><span class="pill ask">٦ أسئلة</span></div>
+  <section class="sec changed" id="s12" style="border-color:var(--accent);box-shadow:0 0 0 1px var(--accent) inset">
+    <div class="sec-head"><span class="sec-num">١٢</span><h2>عنوان الموقع (الدومين)</h2><span class="pill v12">جديد ١.٢</span></div>
+    <p>الموقع محتاج عنوان على الإنترنت، يكتبه الناس أو يضغطوا عليه فيفتحوا موقع المكتب. العنوان ده اسمه <b>الدومين</b>. القسم ده بيشرح هو إيه، وليه نحجزه، وتكلفته.</p>
+
+    <h3>يعني إيه دومين؟</h3>
+    <p>الدومين هو <b>اسم الموقع على الإنترنت</b>، زي يافطة المحل أو رقم التليفون: الحاجة اللي الناس بتفتكرها وبتوصل بيها للمكتب.</p>
+    <div class="dom-ex">alyusr.net</div>
+    <p class="muted">ده مثال: لما حد يكتب الاسم ده في الموبايل، يفتح موقع المكتب على طول.</p>
+
+    <h3>ليه نحجز دومين؟</h3>
+    <ul>
+      <li><b>اسم ثابت باسم المكتب</b>، يتكتب على اليافطة والكروت وصفحة الفيسبوك.</li>
+      <li><b>لينكات الإعلانات اللي بتتبعت على واتساب</b> بتطلع باسم المكتب، فالناس بتثق فيها أكتر.</li>
+      <li><b>الاسم يبقى بتاع حضرتك</b>، ومحدش تاني يقدر ياخده طول ما هو متجدد.</li>
+      <li><b>لو غيرنا مكان استضافة الموقع بعدين</b>، العنوان يفضل زي ما هو، والناس ما تحسش بأي تغيير.</li>
+    </ul>
+    <p class="note">من غير دومين، الموقع يقدر يشتغل على لينك مجاني طويل زي <span dir="ltr">alyusr.pages.dev</span>. ده كويس للتجربة، لكنه مش مناسب للإعلان عن المكتب.</p>
+
+    <h3>التكلفة: لازم حضرتك تعرف الحاجات دي</h3>
+    <div class="nb v12">
+      <span class="pill v12">مهم</span>
+      <ul>
+        <li>الدومين <b>اشتراك سنوي</b>: بيتدفع <b>كل سنة</b>، مش مرة واحدة.</li>
+        <li>المبلغ ده <b>منفصل عن تكلفة تنفيذ المشروع</b>، وبيتدفع لشركة تسجيل الدومينات مباشرة.</li>
+        <li>لو السنة خلصت والدومين ما اتجددش، <b>الموقع بيقف</b>، وممكن حد تاني يحجز الاسم. عشان كده يُفضّل تفعيل <b>التجديد التلقائي</b>، أو الدفع لسنتين أو تلاتة مرة واحدة.</li>
+        <li>الدومين بيتسجل <b>باسم المكتب أو باسم حضرتك</b>، عشان يفضل ملكك.</li>
+      </ul>
+    </div>
+
+    <h3>الأسماء والأسعار</h3>
+    <p><b dir="ltr">AlYusr.com</b> اللي حضرتك اخترته <b>محجوز من سنة ٢٠٠٣</b>، فمش متاح. دي البدائل اللي كانت متاحة وقت الكشف:</p>
+    <div class="tbl">
+      <table class="rt">
+        <thead><tr><th>الدومين</th><th>متاح؟</th><th>التكلفة في السنة</th><th>ملاحظة</th></tr></thead>
+        <tbody>
+          <tr class="nr"><td dir="ltr" style="text-align:right">alyusr.net</td><td data-label="متاح؟"><span class="tag yes">متاح</span></td><td data-label="التكلفة في السنة"><span>حوالي <b>٦٥٠ جنيه</b></span></td><td data-label="ملاحظة"><span>نفس الاسم بالظبط، وسهل يتقال. <b>ترشيحنا</b></span></td></tr>
+          <tr><td dir="ltr" style="text-align:right">alyusraqar.com</td><td data-label="متاح؟"><span class="tag yes">متاح</span></td><td data-label="التكلفة في السنة"><span>حوالي <b>٥٨٠ جنيه</b></span></td><td data-label="ملاحظة"><span>«اليسر عقار»، لو حضرتك عايز .com</span></td></tr>
+          <tr><td dir="ltr" style="text-align:right">alyusr-aqar.com</td><td data-label="متاح؟"><span class="tag yes">متاح</span></td><td data-label="التكلفة في السنة"><span>حوالي ٥٨٠ جنيه</span></td><td data-label="ملاحظة"><span>فيه شَرطة، والناس بتنساها</span></td></tr>
+          <tr><td dir="ltr" style="text-align:right">alyusrhomes.com</td><td data-label="متاح؟"><span class="tag yes">متاح</span></td><td data-label="التكلفة في السنة"><span>حوالي ٥٨٠ جنيه</span></td><td data-label="ملاحظة"><span>«بيوت اليسر» بالإنجليزي</span></td></tr>
+          <tr><td dir="ltr" style="text-align:right">alyusr.com.eg</td><td data-label="متاح؟"><span class="tag yes">غالبًا متاح</span></td><td data-label="التكلفة في السنة"><span>من <b>٨٤٥ جنيه</b></span></td><td data-label="ملاحظة"><span>دومين مصري، بيحتاج أوراق رسمية زي السجل التجاري</span></td></tr>
+          <tr><td dir="ltr" style="text-align:right">alyusr.com / .org / .app</td><td data-label="متاح؟"><span class="tag red">محجوز</span></td><td data-label="التكلفة في السنة"><span>—</span></td><td data-label="ملاحظة"><span>حجزهم حد تاني قبل كده</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="muted" style="font-size:14.5px">الأسعار تقريبية على أساس سعر الدولار يوم ٥ أكتوبر ٢٠٢٦ (حوالي ٥٢٫٣ جنيه)، وممكن تختلف شوية حسب سعر الدولار وقت الدفع. والسعر ده نفسه بيتكرر كل سنة في التجديد. الأسماء المتاحة ممكن حد يحجزها في أي وقت، لحد ما نحجزها إحنا فعلًا.</p>
+    <div class="qb">
+      <a class="pill ask" href="#q5">سؤال ٥</a>
+      <p>ترشيحنا <b dir="ltr">alyusr.net</b>. اختار الاسم اللي حضرتك تفضله من سؤال ٥ تحت.</p>
+    </div>
+  </section>
+
+  <!-- 13 -->
+  <section class="sec asks" id="s13">
+    <div class="sec-head"><span class="sec-num">١٣</span><h2>أسئلة محتاجة رد حضرتك</h2><span class="pill ask">٦ أسئلة</span></div>
     <p>اختار الإجابة لكل سؤال، واكتب أي ملاحظة تحت، وبعدين اضغط «انسخ ردّي» وابعته لي على واتساب.</p>
 
     <div class="qs">
@@ -954,15 +1033,11 @@
         </div>
       </fieldset>
 
-      <fieldset class="q" id="q2">
-        <legend>٢. سعر بيع الأراضي يتكتب إزاي؟</legend>
-        <p class="why">ده بيحدد الفلتر، لأن سعر القيراط رقمه مختلف تمامًا عن سعر القطعة كلها.</p>
-        <div class="opts">
-          <label class="opt-row"><input type="radio" name="q2" id="q2a" value="سعر القطعة كلها (إجمالي)"><span>سعر القطعة كلها (إجمالي)</span></label>
-          <label class="opt-row"><input type="radio" name="q2" id="q2b" value="الزراعي بسعر القيراط والمباني بسعر المتر"><span>الزراعي بسعر القيراط، والمباني بسعر المتر</span></label>
-          <label class="opt-row"><input type="radio" name="q2" id="q2c" value="الاتنين: المعلن يكتب سعر الوحدة والموقع يحسب الإجمالي من المساحة"><span>الاتنين: المعلن يكتب سعر القيراط أو المتر، والموقع يحسب الإجمالي من المساحة</span></label>
-        </div>
-      </fieldset>
+      <div class="q-done" id="q2">
+        <b>٢. سعر بيع الأراضي</b>
+        <span class="pill v12">✓ اتحسم في ١.٢</span>
+        <span>إجمالي القطعة</span>
+      </div>
 
       <fieldset class="q" id="q3">
         <legend>٣. معنى فلتر السعر</legend>
@@ -984,10 +1059,11 @@
 
       <fieldset class="q" id="q5">
         <legend>٥. اسم الدومين</legend>
-        <p class="why">AlYusr.com محجوز من ٢٠٠٣.</p>
+        <p class="why">AlYusr.com محجوز من ٢٠٠٣. التفاصيل والأسعار في <a href="#s12">القسم ١٢</a>.</p>
         <div class="opts">
-          <label class="opt-row"><input type="radio" name="q5" id="q5a" value="alyusr.net"><span dir="ltr">alyusr.net</span></label>
-          <label class="opt-row"><input type="radio" name="q5" id="q5b" value="alyusr-eg.com"><span dir="ltr">alyusr-eg.com</span></label>
+          <label class="opt-row"><input type="radio" name="q5" id="q5a" value="alyusr.net"><span><span dir="ltr">alyusr.net</span> · حوالي ٦٥٠ جنيه في السنة <span class="rec">اقتراحنا</span></span></label>
+          <label class="opt-row"><input type="radio" name="q5" id="q5b" value="alyusraqar.com"><span><span dir="ltr">alyusraqar.com</span> · حوالي ٥٨٠ جنيه في السنة</span></label>
+          <label class="opt-row"><input type="radio" name="q5" id="q5d" value="alyusr.com.eg"><span><span dir="ltr">alyusr.com.eg</span> · من ٨٤٥ جنيه في السنة (محتاج أوراق رسمية)</span></label>
           <label class="opt-row"><input type="radio" name="q5" id="q5c" value="اسم تاني"><span>اسم تاني</span></label>
         </div>
         <input class="other" type="text" id="q5-other" placeholder="اكتب الاسم اللي تفضله" aria-label="اسم دومين آخر">
@@ -999,6 +1075,15 @@
         <div class="opts">
           <label class="opt-row"><input type="radio" name="q6" id="q6a" value="موافق على المسودة زي ما هي"><span>موافق على المسودة زي ما هي</span></label>
           <label class="opt-row"><input type="radio" name="q6" id="q6b" value="عندي تعديلات (مكتوبة في الملاحظات)"><span>عندي تعديلات، وهكتبها في الملاحظات تحت</span></label>
+        </div>
+      </fieldset>
+
+      <fieldset class="q" id="q7">
+        <legend>٧. التطبيقين الأقرب لفكرة حضرتك</legend>
+        <p class="why">أقرب اتنين لقيناهم: <b>عقارماب</b> (مصر، عرض عقارات للبيع والإيجار بفلاتر)، و<b>ديل – اطلب عقارك</b> (السعودية، المشتري بيكتب طلبه والوسطاء يبعتوله عروض، زي قسم «المطلوب» عندنا).</p>
+        <div class="opts">
+          <label class="opt-row"><input type="radio" name="q7" id="q7a" value="أيوه، هما عقارماب وديل"><span>أيوه، هما دول</span></label>
+          <label class="opt-row"><input type="radio" name="q7" id="q7b" value="لا، تطبيقات تانية (مكتوبة في الملاحظات)"><span>لا، تطبيقات تانية، وهكتب أسماءهم في الملاحظات تحت</span></label>
         </div>
       </fieldset>
     </div>
@@ -1018,9 +1103,10 @@
     <ul class="done-list">
       <li><span class="ic">✓</span><span>رقم واتساب المكتب: وصل.</span></li>
       <li><span class="ic">✓</span><span>عنوان المكتب: وصل (مبدئي، وممكن يتغير بعدين من الإعدادات).</span></li>
+      <li><span class="ic">✓</span><span>سعر بيع الأراضي: إجمالي القطعة.</span></li>
       <li><span class="ic">…</span><span>اللوجو: مستنيينه.</span></li>
       <li><span class="ic">…</span><span>إعلان لكل تصنيف عشان الموقع يبدأ وهو مش فاضي: مستنيينه.</span></li>
-      <li><span class="ic">…</span><span>أسماء التطبيقين اللي حضرتك قلت إنهم أقرب لفكرتك: ما وصلوش في الرسالة، ياريت تبعتهم.</span></li>
+      <li><span class="ic">…</span><span>أسماء التطبيقين اللي حضرتك قلت إنهم أقرب لفكرتك: اقترحنا اتنين في سؤال ٧.</span></li>
     </ul>
 
     <label class="fld" for="notes">ملاحظات حضرتك</label>
@@ -1038,14 +1124,14 @@
 <footer class="sign">
   <span>إعداد</span>
   <span class="name">مهدي عبدالمجيد</span>
-  <span>وثيقة متطلبات موقع اليسر للتسهيلات العقارية · الإصدار ١.١ · ٢٩ سبتمبر ٢٠٢٦</span>
+  <span>وثيقة متطلبات موقع اليسر للتسهيلات العقارية · الإصدار ١.٢ · ٥ أكتوبر ٢٠٢٦</span>
   <span>أي تعديل نتفق عليه هيتضاف في إصدار جديد من الوثيقة.</span>
 </footer>
 </div>
 
 <script>
 (function () {
-  var KEY = 'alyusr-review-v1.1';
+  var KEY = 'alyusr-review-v1.2';
   var radios = Array.prototype.slice.call(document.querySelectorAll('.q input[type="radio"]'));
   var other = document.getElementById('q5-other');
   var notes = document.getElementById('notes');
@@ -1073,11 +1159,11 @@
 
   var TITLES = {
     q1: '١. تقسيم الأراضي الزراعية',
-    q2: '٢. سعر بيع الأراضي',
     q3: '٣. معنى فلتر السعر',
     q4: '٤. رقم الإعلان ثابت',
     q5: '٥. اسم الدومين',
-    q6: '٦. بنود كل تصنيف'
+    q6: '٦. بنود كل تصنيف',
+    q7: '٧. التطبيقين الأقرب للفكرة'
   };
 
   function answer(name) {
@@ -1088,7 +1174,7 @@
   }
 
   function buildReply() {
-    var lines = ['ردّي على وثيقة متطلبات موقع اليسر (الإصدار ١.١)', ''];
+    var lines = ['ردّي على وثيقة متطلبات موقع اليسر (الإصدار ١.٢)', ''];
     Object.keys(TITLES).forEach(function (k) {
       lines.push(TITLES[k] + ': ' + answer(k));
     });
@@ -1134,7 +1220,7 @@
         }
       });
     }, { rootMargin: '-30% 0px -60% 0px' });
-    document.querySelectorAll('#new, section.sec').forEach(function (s) { io.observe(s); });
+    document.querySelectorAll('#new12, #new, section.sec').forEach(function (s) { io.observe(s); });
   }
 })();
 </script>
